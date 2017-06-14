@@ -3,11 +3,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Logo from './components/Logo';
+import Excel from './components/Excel';
 
 let headers = localStorage.getItem('headers');
 let data = localStorage.getItem('data');
 
-if (!deaders) {
+if (!headers) {
     headers = ['Title', 'Year', 'Rating', 'Comments'];
     data = [['Test', '2015', '3', 'meh']];
 }
